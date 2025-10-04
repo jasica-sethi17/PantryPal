@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pantry Recipes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>🍋 Smart Pantry Recipes</header>
+  <main>
+    <section>
+      <h2>Add a Recipe</h2>
+      <form id="recipeForm">
+        <input type="text" id="recipeName" placeholder="Recipe name" required>
+        <textarea id="recipeIngredients" rows="2" placeholder="Ingredients (comma separated)" required></textarea>
+        <textarea id="recipeInstructions" rows="3" placeholder="Instructions" required></textarea>
+        <button type="submit">Add Recipe</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Find Recipes by Your Pantry</h2>
+      <div class="filter-section">
+        <input type="text" id="pantryInput" placeholder="Enter ingredients you have (comma separated)">
+        <button id="filterBtn">Find Recipes</button>
+        <button id="clearFilterBtn">Clear</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Recipes</h2>
+      <div id="recipeList"></div>
+    </section>
+  </main>
+
+  <footer>Made with ❤️ as part of my Couch to Code 2025 journey</footer>
+  <script src="app.js"></script>
+</body>
+</html>
