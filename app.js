@@ -54,8 +54,7 @@ async function saveRecipes() {
         div.innerHTML = `
           <h3>${recipe.name}</h3>
           <small>Ingredients: ${recipe.ingredients.join(', ')}</small>
-          <p>${recipe.instructions}</p>
-          <button onclick="deleteRecipe(${index})">Delete</button>
+          <p>${recipe.instructions}</p>s
         `;
         recipeList.appendChild(div);
       });
