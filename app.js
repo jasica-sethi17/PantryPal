@@ -54,7 +54,7 @@ async function saveRecipes() {
         div.innerHTML = `
           <h3>${recipe.name}</h3>
           <small>Ingredients: ${recipe.ingredients.join(', ')}</small>
-          <p>${recipe.instructions}</p>s
+          <p>${recipe.instructions}</p>
         `;
         recipeList.appendChild(div);
       });
